@@ -41,6 +41,7 @@ header {
 	background-color   : transparent;
 	background-repeat  : no-repeat;
 	background-position: 0 -490px;
+	z-index: 100;
 }
 
 header hgroup{
@@ -136,9 +137,99 @@ header nav.main-menu menu li.third a {
 header nav.main-menu menu li.forth a {
 	background-position-x : -313px;
 }
+
 header nav.main-menu menu li.fifth a {
 	background-position-x : -413px;
 }
+
 header nav.main-menu menu li.sixth a {
 	background-position-x : -513px;
+}
+
+div.show-content {
+	position : fixed;
+	top      : 0;
+	left     : 0;
+	right    : 0;
+	bottom   : 0;
+	overflow : hidden;
+}
+
+div.train {
+	position : relative;
+	left     : -866px;
+	top      : -2840px;
+	width    : 3010px;
+	height   : 3010px;
+	-webkit-transform-origin: center center;
+	background-image: url('images/path.svg');
+	background-position: center center;
+	-webkit-transition: all 3s;
+	-webkit-transition-delay:700ms;
+}
+
+div.train > div {
+	width                   :1180px;
+	height                  : 700px;
+	position                : absolute;
+	-webkit-transform-origin: center top;
+	overflow                : auto;
+}
+
+div.train > div div.imgholder {
+	width         : 940px;
+	height        : 400px;
+	margin-bottom : 40px;
+	background-image: url('images/sprite_bkg_slideshows.png');
+	background-position: 100% auto;
+	background-repeat: no-repeat;
+}
+
+div.train > div div.content-wraper{
+	width: 940px;
+}
+div.train > div div.content-wraper p{
+	width: 540px;
+}
+div.train > div.first-content {
+	left : 910px;
+	top  : 3000px;
+}
+
+div.train > div.second-content {
+	left : 2210px;
+	top  : 2250px;
+	-webkit-transform: rotate3d(0,0,1,-60deg);
+}
+
+div.train > div.third-content {
+	left : 2210px;
+	top  : 750px;
+	-webkit-transform: rotate3d(0,0,1,-120deg);
+}
+
+div.train > div.forth-content {
+	left : 910px;
+	top  : 0px;
+	-webkit-transform: rotate3d(0,0,1,-180deg);
+}
+
+footer{
+	width              : 950px;
+	height             : 305px;
+	position           : fixed;
+	bottom             : 0;
+	margin             : 0 auto;
+	background-image   : url('images/sprite_interface.png');
+	background-position:-120px -2550px;
+}
+
+footer span.trigger{
+	background-image   : url('images/sprite_interface.png');
+	background-position:0px -2980px;
+	width: 120px;
+	height: 37px;
+	position: absolute;
+	left:43%;
+	top:-15px;
 }

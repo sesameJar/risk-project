@@ -26,18 +26,67 @@
 	margin: 0 auto;
 }
 
-header {
-	width               : 940px;
-	height          : 110px;
-	position            : fixed;
-	top                 : 0;
-	margin: 0 auto;
-	background-image    : url('images/sprite_interface.png');
-	background-color    : transparent;
-	background-repeat   : no-repeat;
-	background-position : 0 -490px;
+body{
+	background-image: url('images/bg.png');
+	background-repeat: repeat;
 }
 
+header {
+	width              : 940px;
+	height             : 110px;
+	position           : fixed;
+	top                : 0;
+	margin             : 0 auto;
+	background-image   : url('images/sprite_interface.png');
+	background-color   : transparent;
+	background-repeat  : no-repeat;
+	background-position: 0 -490px;
+}
+
+header hgroup{
+	width              : 264px;
+	height             : 158px;
+	background-image   : url('images/sprite_interface.png');
+	background-color   : transparent;
+	background-repeat  : no-repeat;
+	background-position: 0 -790px;
+	position           : absolute;
+	left               : 342px;
+	z-index            : 2;
+}
+
+header span.wheel{
+	width              : 46px;
+	height             : 46px;
+	position           : absolute;
+	left               :450px;
+	top                :125px;
+	background-image   : url('images/sprite_interface.png');
+	background-repeat  : no-repeat;
+	background-position: 0 -960px;
+	z-index            : 5;
+}
+
+header hgroup h1.risk{
+	color         : white;
+	font-family   : 'BebasNeueRegular', Arial, sans-serif;
+	font-size     : 25px;
+	margin-left   : 50px;
+	text-transform: uppercase;
+}
+
+header hgroup h2.risk{
+	color         : #00abba;
+	font-family   : 'BebasNeueRegular', Arial, sans-serif;
+	font-size     : 15px;
+	text-transform: uppercase;
+	position      : absolute;
+	top           :110px;
+	left          : 0;
+	text-align    : center;
+	width         : 260px;
+	font-weight   : normal;
+}
 header nav.main-menu{
 	padding : 50px 49px 0 52px;
 }
@@ -47,14 +96,14 @@ header nav.main-menu menu{
 }
 
 header nav.main-menu menu li{
-	float      : left;
-	list-style : none;
-	padding: 0 10px;
+	float     : left;
+	list-style: none;
+	padding   : 0 10px;
 }
 
 header nav.main-menu menu li a {
 	text-decoration      : none;
-	text-transform: uppercase;
+	text-transform       : uppercase;
 	color                : #333230;
 	width                : 100px;
 	padding              : 45px 20px 18px 20px;
@@ -63,33 +112,33 @@ header nav.main-menu menu li a {
 	background-image     : url('images/sprite_interface.png');
 	background-repeat    : no-repeat;
 	background-position-y:-600px;
-	font-family: 'BebasNeueRegular', Arial, sans-serif;
-	font-size: 10px;
+	font-family          : 'BebasNeueRegular', Arial, sans-serif;
+	font-size            : 10px;
 }
 
 header nav.main-menu menu li:hover a {
-	background-position-y:-680px;
-	color: #00abba;
+	background-position-y : -680px;
+	color                 : #00abba;
 }
 
-header nav.main-menu menu li.start a{
-	background-position-x:-13px;
+header nav.main-menu menu li.start a {
+	background-position-x : -13px;
 }
 
-header nav.main-menu menu li.second a{
-	background-position-x:-113px;
+header nav.main-menu menu li.second a {
+	background-position-x : -113px;
 }
 
-header nav.main-menu menu li.third a{
-	background-position-x:-213px;
+header nav.main-menu menu li.third a {
+	background-position-x : -213px;
 }
 
-header nav.main-menu menu li.forth a{
-	background-position-x:-313px;
+header nav.main-menu menu li.forth a {
+	background-position-x : -313px;
 }
-header nav.main-menu menu li.fifth a{
-	background-position-x:-413px;
+header nav.main-menu menu li.fifth a {
+	background-position-x : -413px;
 }
-header nav.main-menu menu li.sixth a{
-	background-position-x:-513px;
+header nav.main-menu menu li.sixth a {
+	background-position-x : -513px;
 }

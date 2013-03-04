@@ -218,10 +218,11 @@ footer{
 	width              : 950px;
 	height             : 305px;
 	position           : fixed;
-	bottom             : 0;
+	bottom             : -270px;
 	margin             : 0 auto;
 	background-image   : url('images/sprite_interface.png');
 	background-position:-120px -2550px;
+	z-index: 100;
 }
 
 footer span.trigger{

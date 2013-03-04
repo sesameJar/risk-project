@@ -53,19 +53,35 @@ header hgroup{
 	background-position: 0 -790px;
 	position           : absolute;
 	left               : 342px;
-	z-index            : 2;
+	z-index            : 3;
 }
 
 header span.wheel{
-	width              : 46px;
-	height             : 46px;
-	position           : absolute;
-	left               :450px;
-	top                :125px;
-	background-image   : url('images/sprite_interface.png');
-	background-repeat  : no-repeat;
-	background-position: 0 -960px;
-	z-index            : 5;
+	width               : 46px;
+	height              : 46px;
+	position            : absolute;
+	left                : 450px;
+	top                 : 125px;
+	background-image    : url('images/sprite_interface.png');
+	background-repeat   : no-repeat;
+	background-position : 0 -960px;
+	z-index             : 5;
+	-webkit-transition-delay:300ms;
+
+}
+
+header span.pin {
+	width                             : 28px;
+	height                            : 24px;
+	background-image                  : url('images/sprite_interface.png');
+	background-position               : 0 -760px;
+	background-repeat                 : no-repeat;
+	z-index                           : 2;
+	top                               : 73px;
+	left                              : 80px;
+	position                          : absolute;
+	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-webkit-transition-delay          : 300ms;
 }
 
 header hgroup h1.risk{
@@ -117,7 +133,7 @@ header nav.main-menu menu li a {
 	font-size             : 16px;
 }
 
-header nav.main-menu menu li:hover a {
+header nav.main-menu menu li:hover a,header nav.main-menu menu li.active a {
 	background-position-y : -680px;
 	color                 : #00abba;
 }
@@ -152,7 +168,6 @@ div.show-content {
 	left     : 0;
 	right    : 0;
 	bottom   : 0;
-	overflow : hidden;
 }
 
 div.train {
@@ -162,56 +177,193 @@ div.train {
 	width    : 3010px;
 	height   : 3010px;
 	-webkit-transform-origin: center center;
-	background-image: url('images/path.svg');
-	background-position: center center;
-	-webkit-transition: all 3s;
-	-webkit-transition-delay:700ms;
+	background-image    : url('images/path.svg');
+	background-position : center center;
+}
+
+div.zoom{
+	position: absolute;
+	top:0px;
+	left:0px;
 }
 
 div.train > div {
-	width                   :1180px;
-	height                  : 700px;
+	width                   : 1180px;
+	height                  : 500px;
 	position                : absolute;
 	-webkit-transform-origin: center top;
 	overflow                : auto;
 }
 
 div.train > div div.imgholder {
-	width         : 940px;
-	height        : 400px;
-	margin-bottom : 40px;
-	background-image: url('images/sprite_bkg_slideshows.png');
-	background-position: 100% auto;
-	background-repeat: no-repeat;
+	width               : 940px;
+	height              : 400px;
+	margin-bottom       : 40px;
+	background-image    : url('images/sprite_bkg_slideshows.png');
+	background-size     : 100% auto;
+	background-repeat   : no-repeat;
+	padding             : 1px;
+	background-position : left bottom;
+}
+
+div.imgholder img{
+	display    : block;
+	width      : 100%;
+	height     : 92%;
+	margin-top : 18px;
+}
+
+div.slogan {
+	position : absolute;
+	top      : 130px;
+	left     : 160px;
+	z-index  : 2;
+}
+
+div.slogan h4 {
+	font-size       : 34px;
+	font-family     : 'BebasNeueRegular', Arial, sans-serif;
+	background-color: #222;
+	border-radius   : 20px;
+	color           : white;
+	padding         : 0 20px;
+	margin-bottom   : 5px;
+	display         : block;
+	width           : 50px;
+	text-align      : center;
+}
+
+div.slogan p {
+	background-color : #f8c323;
+	border-radius    : 20px;
+	padding          : 3px 20px;
+	font-size        : 28px;
+	font-family      : 'BebasNeueRegular', Arial, sans-serif;
+	color            : white;
+}
+
+div.imgholder div.quot {
+	width   : 320px;
+	height  : 390px;
+	position: absolute;
+	z-index : 2;
+	top     :20px;
+	right   : 270px;
+}
+
+div.quot span.qmarkl{
+	width              : 136px;
+	height             : 160px;
+	left               : 0;
+	top                :-20px;
+	position           : absolute;
+	z-index            : 3;
+	background-image   : url('images/sprite_interface.png');
+	background-position: 0 0;
+}
+
+div.quot span.qmarkr{
+	width              : 65px;
+	height             : 81px;
+	right              : 30px;
+	bottom             :20px;
+	position           : absolute;
+	z-index            : 3;
+	background-image   : url('images/sprite_interface.png');
+	background-position: 0 -180px;
+}
+
+div.quot p.quotslog {
+	background-image   : url('images/sprite_interface.png');
+	background-position: 0 -1450px;
+	height             : 388px;
+	padding            : 0 70px;
+	text-align         : center;
+	vertical-align     : middle;
+	display            : table-cell;
+	font-size          : 30px;
 }
 
 div.train > div div.content-wraper{
-	width: 940px;
+	width : 940px;
 }
 div.train > div div.content-wraper p{
-	width: 540px;
+	width : 540px;
 }
 div.train > div.first-content {
-	left : 910px;
+	left : 1020px;
 	top  : 3000px;
 }
 
 div.train > div.second-content {
-	left : 2210px;
-	top  : 2250px;
+	left : 2270px;
+	top  : 2170px;
 	-webkit-transform: rotate3d(0,0,1,-60deg);
 }
 
 div.train > div.third-content {
-	left : 2210px;
-	top  : 750px;
+	left : 2170px;
+	top  : 700px;
 	-webkit-transform: rotate3d(0,0,1,-120deg);
 }
 
 div.train > div.forth-content {
-	left : 910px;
+	left : 810px;
 	top  : 0px;
 	-webkit-transform: rotate3d(0,0,1,-180deg);
+}
+
+div.slide {
+	width   : 940px;
+	height  : 434px;
+	position: relative;
+	z-index : 1;
+}
+
+div.slide > div {
+	width          : 940px;
+	height         : 434px;
+	position       : absolute;
+	z-index        : -1;
+	background-size: 100% auto;
+}
+
+span.pre{
+	background-image   : url('images/sprite_interface.png');
+	background-position: 0 -1010px;
+	width              : 54px;
+	height             : 44px;
+	position           : absolute;
+	z-index            : 2;
+	left               : 5%;
+	top                :45%;
+}
+
+span.next{
+	background-image   : url('images/sprite_interface.png');
+	background-position: 0 -1110px;
+	width              : 54px;
+	height             : 44px;
+	position           : absolute;
+	z-index            : 2;
+	right              : 5%;
+	top                :45%;
+}
+
+div.slide1{
+	background-image: url('images/slides/slide6.png');
+}
+
+div.slide2{
+	background-image: url('images/slides/slide31.png');
+}
+
+div.slide3{
+	background-image: url('images/slides/slide21.png');
+}
+
+div.slide4{
+	background-image: url('images/slides/slide12.png');
 }
 
 footer{
@@ -221,16 +373,30 @@ footer{
 	bottom             : -270px;
 	margin             : 0 auto;
 	background-image   : url('images/sprite_interface.png');
-	background-position:-120px -2550px;
-	z-index: 100;
+	background-position: -120px -2550px;
+	z-index            : 100;
+	-webkit-transition : all 900ms;
 }
 
 footer span.trigger{
 	background-image   : url('images/sprite_interface.png');
-	background-position:0px -2980px;
-	width: 120px;
-	height: 37px;
-	position: absolute;
-	left:43%;
-	top:-15px;
+	background-position: 0px -2980px;
+	width              : 120px;
+	height             : 37px;
+	position           : absolute;
+	left               : 43%;
+	top                : -15px;
+}
+
+.zoomoutin{
+	-webkit-animation-name    : zoomoutin;
+	-webkit-animation-duration: 3400ms;
+	animation-name            : zoomoutin;
+	animation-duration        : 3400ms; 
+}
+
+@-webkit-keyframes zoomoutin {
+  0%   { -webkit-transform   : scale(1);  }
+  50%  { -webkit-transform   : scale(0.8); }
+  100% { -webkit-transform   : scale(1);    }  
 }

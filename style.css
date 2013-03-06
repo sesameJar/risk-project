@@ -29,6 +29,7 @@
 body{
 	background-image: url('images/bg.png');
 	background-repeat: repeat;
+	font-family: 'BebasNeueRegular', Arial, sans-serif;
 }
 
 /************************   HEADER ***************************/
@@ -135,7 +136,7 @@ header nav.main-menu menu li a {
 	font-size             : 16px;
 }
 
-header nav.main-menu menu li:hover a,header nav.main-menu menu li.active a {
+header nav.main-menu menu li:hover a,header nav.main-menu menu li.	ve a {
 	background-position-y : -680px;
 	color                 : #00abba;
 }
@@ -470,6 +471,35 @@ footer span.trigger{
 	position           : absolute;
 	left               : 43%;
 	top                : -15px;
+}
+
+footer div.source {
+	position: absolute;
+	top:120px;
+	left:660px;
+}
+
+footer div.source ul.sources {
+	list-style-type: none;
+}
+
+div.source ul.sources li {
+	padding-left:15px;
+	background-image: url('images/footer_menu_plus.gif');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+div.source ul.sources li a {
+	font-size: 13px; 
+	color:#777;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+
+div.source ul.sources li a:hover {
+	color: #00abba;
 }
 
 /************************  3D ANIMATION  ***********************/

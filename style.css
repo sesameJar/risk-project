@@ -31,6 +31,8 @@ body{
 	background-repeat: repeat;
 }
 
+/************************   HEADER ***************************/
+
 header {
 	width              : 940px;
 	height             : 110px;
@@ -162,6 +164,8 @@ header nav.main-menu menu li.sixth a {
 	background-position-x : -513px;
 }
 
+/*****************************  CONTENT ***************************/
+
 div.show-content {
 	position : fixed;
 	top      : 0;
@@ -193,6 +197,7 @@ div.train > div {
 	position                : absolute;
 	-webkit-transform-origin: center top;
 	overflow                : auto;
+	padding-bottom: 250px;
 }
 
 div.train > div div.imgholder {
@@ -287,12 +292,87 @@ div.quot p.quotslog {
 div.train > div div.content-wraper{
 	width : 940px;
 }
+
 div.train > div div.content-wraper p{
 	width : 540px;
 }
+
 div.train > div.first-content {
 	left : 1020px;
 	top  : 3000px;
+}
+
+div.content-wraper hgroup {
+	margin-bottom: 20px;
+	position     : relative;
+}
+
+div.content-wraper hgroup:before{
+	content     : '';
+	background  : transparent url('images/sprite_interface.png') no-repeat;
+	position    : absolute;
+	width       : 40px;
+	left        : 50%;
+	top         : 0;
+	margin-left : -20px;
+	height      : 53px;
+}
+
+div.content-wraper hgroup h3{
+	background  : transparent url('images/bkg_header-lines.png') repeat-x center center;
+	font        : 56px/normal 'bebas_neueregular';
+	color       : #333230;
+	text-shadow : 4px 4px rgba(51,50,48,0.1);
+	text-align  : center;
+}
+
+div.content-wraper hgroup h5{
+	font-size : 14px;
+	color     : #7a7976;
+}
+
+div.content-wraper ul{
+	list-style: none;
+	width     : 940px;
+	margin    : 0 auto;
+}
+
+div.content-wraper ul li{
+	background-image : url('images/bkg_content.png');
+	background-repeat: repeat;
+	width            : 225px;
+	margin-right     : 10px;
+	position         : relative;
+	float            : left;
+	min-height       : 100px;
+}
+
+div.content-wraper ul li .yellow{
+	width               : inherit;
+	height              : inherit;
+	background-image    : url('images/box_hover.jpg');
+	background-position : -600px -600px;
+}
+
+div.content-wraper ul li .yellow:hover{
+	background-position : 0px 0px;
+}
+
+div.content-wraper ul li .yellow p{
+	width     : inherit;
+	height    : inherit;
+	word-wrap : break-word;
+}
+
+div.content-wraper ul li span.plus{
+	background-image   : url('images/button_more.png');
+	background-repeat  : no-repeat;
+	background-position: center bottom;
+	width              : 220px;
+	height             : 37px;
+	position           : absolute;
+	bottom             : 10px;
+	left               : 45%;
 }
 
 div.train > div.second-content {
@@ -313,11 +393,13 @@ div.train > div.forth-content {
 	-webkit-transform: rotate3d(0,0,1,-180deg);
 }
 
+/***************************  SLIDER ***************************/
+
 div.slide {
-	width   : 940px;
-	height  : 434px;
-	position: relative;
-	z-index : 1;
+	width    : 940px;
+	height   : 434px;
+	position : relative;
+	z-index  : 1;
 }
 
 div.slide > div {
@@ -336,7 +418,7 @@ span.pre{
 	position           : absolute;
 	z-index            : 2;
 	left               : 5%;
-	top                :45%;
+	top                : 45%;
 }
 
 span.next{
@@ -347,7 +429,7 @@ span.next{
 	position           : absolute;
 	z-index            : 2;
 	right              : 5%;
-	top                :45%;
+	top                : 45%;
 }
 
 div.slide1{
@@ -365,6 +447,8 @@ div.slide3{
 div.slide4{
 	background-image: url('images/slides/slide12.png');
 }
+
+/***************************  FOOTER  ****************************/
 
 footer{
 	width              : 950px;
@@ -387,6 +471,8 @@ footer span.trigger{
 	left               : 43%;
 	top                : -15px;
 }
+
+/************************  3D ANIMATION  ***********************/
 
 .zoomoutin{
 	-webkit-animation-name    : zoomoutin;

@@ -12,11 +12,11 @@
 			},options);
 
 			var nextPic,
-				pics    =this,
-				indx    =options.startIndex,
-				plen    =this.length,
-				fadeIn  ={opacity:1},
-				fadeOut ={opacity:0},
+				pics    = this,
+				indx    = options.startIndex,
+				plen    = this.length,
+				fadeIn  = {opacity:1},
+				fadeOut = {opacity:0},
 				ease = !!window.Zepto ? 'ease-in-out' : 'swing';
 
 			pics.css(fadeOut);

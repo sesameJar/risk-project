@@ -173,21 +173,21 @@ div.show-content {
 }
 
 div.train {
-	position : relative;
-	left     : -866px;
-	top      : -2840px;
-	width    : 3010px;
-	height   : 3010px;
+	position           : relative;
+	left               : -866px;
+	top                : -2840px;
+	width              : 3010px;
+	height             : 3010px;
+	background-image   : url('images/path.svg');
+	background-position: center center;
 	-webkit-transform-origin: center center;
-	background-image    : url('images/path.svg');
-	background-position : center center;
 	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 
 div.zoom{
 	position: absolute;
-	top:0px;
-	left:0px;
+	top     :0px;
+	left    :0px;
 }
 
 div.train > div {
@@ -501,11 +501,11 @@ div.source ul.sources li a:hover {
 }
 
 footer div.copyright {
-	position : absolute;
-	bottom   : 8px;
-	left     : 437px;
-	width    : 70px;
-	color    : #888;
+	position  : absolute;
+	bottom    : 8px;
+	left      : 437px;
+	width     : 70px;
+	color     : #888;
 	text-align: center;
 }
 
@@ -514,7 +514,7 @@ footer div.copyright a {
 	text-decoration : none;
 	width           : 70px;
 	text-align      : center;
-	letter-spacing: 2px;
+	letter-spacing  : 2px;
 }
 
 footer div.copyright a:hover {
@@ -524,14 +524,14 @@ footer div.copyright a:hover {
 /************************  3D ANIMATION  ***********************/
 
 .zoomoutin {
-	-webkit-animation-name    : zoomoutin;
-	-webkit-animation-duration: 3400ms;
-	animation-name            : zoomoutin;
-	animation-duration        : 3400ms; 
+	-webkit-animation-name     : zoomoutin;
+	-webkit-animation-duration : 3300ms;
+	animation-name             : zoomoutin;
+	animation-duration         : 3300ms; 
 }
 
 @-webkit-keyframes zoomoutin {
-  0%   { -webkit-transform   : scale(1);  }
-  50%  { -webkit-transform   : scale(0.8); }
-  100% { -webkit-transform   : scale(1);    }  
+  0%   { -webkit-transform : scale(1);}
+  50%  { -webkit-transform : scale(0.8);}
+  100% { -webkit-transform : scale(1);}  
 }

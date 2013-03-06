@@ -49,7 +49,7 @@ $(function(){
 
 		setTimeout(function(){
 			zoom.removeClass('zoomoutin');
-		},3000)
+		},3300)
 		curentMenu=thisItem;
 	});
 

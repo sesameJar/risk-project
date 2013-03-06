@@ -69,8 +69,6 @@ header span.wheel{
 	background-repeat   : no-repeat;
 	background-position : 0 -960px;
 	z-index             : 5;
-	-webkit-transition-delay:300ms;
-
 }
 
 header span.pin {
@@ -84,7 +82,6 @@ header span.pin {
 	left                              : 80px;
 	position                          : absolute;
 	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
-	-webkit-transition-delay          : 300ms;
 }
 
 header hgroup h1.risk{
@@ -136,7 +133,7 @@ header nav.main-menu menu li a {
 	font-size             : 16px;
 }
 
-header nav.main-menu menu li:hover a,header nav.main-menu menu li.	ve a {
+header nav.main-menu menu li:hover a,header nav.main-menu menu li.active a {
 	background-position-y : -680px;
 	color                 : #00abba;
 }
@@ -184,6 +181,7 @@ div.train {
 	-webkit-transform-origin: center center;
 	background-image    : url('images/path.svg');
 	background-position : center center;
+	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 
 div.zoom{
@@ -480,11 +478,11 @@ footer div.source {
 }
 
 footer div.source ul.sources {
-	list-style-type: none;
+	list-style-type : none;
 }
 
 div.source ul.sources li {
-	padding-left        :15px;
+	padding-left        : 15px;
 	background-image    : url('images/footer_menu_plus.gif');
 	background-repeat   : no-repeat;
 	background-position : left center;
@@ -492,7 +490,7 @@ div.source ul.sources li {
 
 div.source ul.sources li a {
 	font-size       : 13px; 
-	color           :#777;
+	color           : #777;
 	text-decoration : none;
 	letter-spacing  : 1px;
 	font-weight     : normal;
@@ -502,9 +500,30 @@ div.source ul.sources li a:hover {
 	color : #00abba;
 }
 
+footer div.copyright {
+	position : absolute;
+	bottom   : 8px;
+	left     : 437px;
+	width    : 70px;
+	color    : #888;
+	text-align: center;
+}
+
+footer div.copyright a {
+	color           : #00abba;
+	text-decoration : none;
+	width           : 70px;
+	text-align      : center;
+	letter-spacing: 2px;
+}
+
+footer div.copyright a:hover {
+	text-decoration : underline;
+}
+
 /************************  3D ANIMATION  ***********************/
 
-.zoomoutin{
+.zoomoutin {
 	-webkit-animation-name    : zoomoutin;
 	-webkit-animation-duration: 3400ms;
 	animation-name            : zoomoutin;

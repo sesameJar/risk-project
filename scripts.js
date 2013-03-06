@@ -22,7 +22,7 @@ $(function(){
 		train      = $('div.train'),
 		wheel      = $('span.wheel'),
 		zoom       = $('div.show-content'),
-		curentMenu =0;
+		curentMenu = 0;
 
 	menus.click(function(){
 		var thisItem = $(this).index();

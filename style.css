@@ -434,49 +434,49 @@ span.next{
 }
 
 div.slide1{
-	background-image: url('images/slides/slide6.png');
+	background-image : url('images/slides/slide6.png');
 }
 
 div.slide2{
-	background-image: url('images/slides/slide31.png');
+	background-image : url('images/slides/slide31.png');
 }
 
 div.slide3{
-	background-image: url('images/slides/slide21.png');
+	background-image : url('images/slides/slide21.png');
 }
 
 div.slide4{
-	background-image: url('images/slides/slide12.png');
+	background-image : url('images/slides/slide12.png');
 }
 
 /***************************  FOOTER  ****************************/
 
 footer{
-	width              : 950px;
-	height             : 305px;
-	position           : fixed;
-	bottom             : -270px;
-	margin             : 0 auto;
-	background-image   : url('images/sprite_interface.png');
-	background-position: -120px -2550px;
-	z-index            : 100;
-	-webkit-transition : all 900ms;
+	width               : 950px;
+	height              : 305px;
+	position            : fixed;
+	bottom              : -270px;
+	margin              : 0 auto;
+	background-image    : url('images/sprite_interface.png');
+	background-position : -120px -2550px;
+	z-index             : 100;
+	-webkit-transition  : all 900ms;
 }
 
 footer span.trigger{
-	background-image   : url('images/sprite_interface.png');
-	background-position: 0px -2980px;
-	width              : 120px;
-	height             : 37px;
-	position           : absolute;
-	left               : 43%;
-	top                : -15px;
+	background-image    : url('images/sprite_interface.png');
+	background-position : 0px -2980px;
+	width               : 120px;
+	height              : 37px;
+	position            : absolute;
+	left                : 43%;
+	top                 : -15px;
 }
 
 footer div.source {
-	position: absolute;
-	top:120px;
-	left:660px;
+	position : absolute;
+	top      : 120px;
+	left     : 660px;
 }
 
 footer div.source ul.sources {
@@ -484,22 +484,22 @@ footer div.source ul.sources {
 }
 
 div.source ul.sources li {
-	padding-left:15px;
-	background-image: url('images/footer_menu_plus.gif');
-	background-repeat: no-repeat;
-	background-position: left center;
+	padding-left        :15px;
+	background-image    : url('images/footer_menu_plus.gif');
+	background-repeat   : no-repeat;
+	background-position : left center;
 }
 
 div.source ul.sources li a {
-	font-size: 13px; 
-	color:#777;
-	text-decoration: none;
-	letter-spacing: 1px;
-	font-weight: normal;
+	font-size       : 13px; 
+	color           :#777;
+	text-decoration : none;
+	letter-spacing  : 1px;
+	font-weight     : normal;
 }
 
 div.source ul.sources li a:hover {
-	color: #00abba;
+	color : #00abba;
 }
 
 /************************  3D ANIMATION  ***********************/

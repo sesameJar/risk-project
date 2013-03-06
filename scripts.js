@@ -17,14 +17,17 @@ $(function(){
 			},900)
 		}	
 	})
-	var menus = $('nav.main-menu menu li'),
-		pin   = $('header span.pin'),
-		train = $('div.train'),
-		wheel = $('span.wheel'),
-		zoom  = $('div.show-content');
+	var menus      = $('nav.main-menu menu li'),
+		pin        = $('header span.pin'),
+		train      = $('div.train'),
+		wheel      = $('span.wheel'),
+		zoom       = $('div.show-content'),
+		curentMenu =0;
 
 	menus.click(function(){
 		var thisItem = $(this).index();
+		menus.eq(curentMenu).removeClass('active');
+		menus.eq(thisItem).addClass('active');
 
 		if(thisItem>=3){
 			pin.animate({
@@ -47,8 +50,8 @@ $(function(){
 		setTimeout(function(){
 			zoom.removeClass('zoomoutin');
 		},3000)
-
-	})
+		curentMenu=thisItem;
+	});
 
 	
 })

@@ -192,11 +192,11 @@ div.zoom{
 
 div.train > div {
 	width                   : 1180px;
-	height                  : 500px;
+	height                  : 400px;
 	position                : absolute;
 	-webkit-transform-origin: center top;
 	overflow                : auto;
-	padding-bottom: 250px;
+	padding-bottom: 300px;
 }
 
 div.train > div div.imgholder {
@@ -339,18 +339,21 @@ div.content-wraper ul{
 div.content-wraper ul li{
 	background-image : url('images/bkg_content.png');
 	background-repeat: repeat;
-	width            : 225px;
+	width            : 220px;
 	margin-right     : 10px;
 	position         : relative;
 	float            : left;
-	min-height       : 100px;
+	min-height       : 200px;
+
 }
 
 div.content-wraper ul li .yellow{
 	width               : inherit;
-	height              : inherit;
+	min-height          : inherit;
 	background-image    : url('images/box_hover.jpg');
 	background-position : -600px -600px;
+	background-repeat: no-repeat;
+	-webkit-transition:all 600ms;
 }
 
 div.content-wraper ul li .yellow:hover{
@@ -361,17 +364,19 @@ div.content-wraper ul li .yellow p{
 	width     : inherit;
 	height    : inherit;
 	word-wrap : break-word;
+	background-color: transparent;
 }
 
 div.content-wraper ul li span.plus{
 	background-image   : url('images/button_more.png');
 	background-repeat  : no-repeat;
 	background-position: center bottom;
-	width              : 220px;
+	width              : 30px;
 	height             : 37px;
 	position           : absolute;
-	bottom             : 10px;
-	left               : 45%;
+	bottom             : -10px;
+	left               : 100px;
+	-webkit-transition : all 500ms;
 }
 
 div.train > div.second-content {
@@ -453,7 +458,7 @@ footer{
 	width               : 950px;
 	height              : 305px;
 	position            : fixed;
-	bottom              : -270px;
+	bottom              : -280px;
 	margin              : 0 auto;
 	background-image    : url('images/sprite_interface.png');
 	background-position : -120px -2550px;

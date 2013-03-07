@@ -225,16 +225,16 @@ div.slogan {
 }
 
 div.slogan h4 {
-	font-size       : 34px;
-	font-family     : 'BebasNeueRegular', Arial, sans-serif;
-	background-color: #222;
-	border-radius   : 20px;
-	color           : white;
-	padding         : 0 20px;
-	margin-bottom   : 5px;
-	display         : block;
-	width           : 50px;
-	text-align      : center;
+	font-size        : 34px;
+	font-family      : 'BebasNeueRegular', Arial, sans-serif;
+	background-color : #222;
+	border-radius    : 20px;
+	color            : white;
+	padding          : 0 20px;
+	margin-bottom    : 5px;
+	display          : block;
+	width            : 50px;
+	text-align       : center;
 }
 
 div.slogan p {
@@ -251,41 +251,41 @@ div.imgholder div.quot {
 	height  : 390px;
 	position: absolute;
 	z-index : 2;
-	top     :20px;
+	top     : 20px;
 	right   : 270px;
 }
 
-div.quot span.qmarkl{
-	width              : 136px;
-	height             : 160px;
-	left               : 0;
-	top                :-20px;
-	position           : absolute;
-	z-index            : 3;
-	background-image   : url('images/sprite_interface.png');
-	background-position: 0 0;
+div.quot span.qmarkl {
+	width               : 136px;
+	height              : 160px;
+	left                : 0;
+	top                 : -20px;
+	position            : absolute;
+	z-index             : 3;
+	background-image    : url('images/sprite_interface.png');
+	background-position : 0 0;
 }
 
-div.quot span.qmarkr{
-	width              : 65px;
-	height             : 81px;
-	right              : 30px;
-	bottom             :20px;
-	position           : absolute;
-	z-index            : 3;
-	background-image   : url('images/sprite_interface.png');
-	background-position: 0 -180px;
+div.quot span.qmarkr {
+	width               : 65px;
+	height              : 81px;
+	right               : 30px;
+	bottom              : 20px;
+	position            : absolute;
+	z-index             : 3;
+	background-image    : url('images/sprite_interface.png');
+	background-position : 0 -180px;
 }
 
 div.quot p.quotslog {
-	background-image   : url('images/sprite_interface.png');
-	background-position: 0 -1450px;
-	height             : 388px;
-	padding            : 0 70px;
-	text-align         : center;
-	vertical-align     : middle;
-	display            : table-cell;
-	font-size          : 30px;
+	background-image    : url('images/sprite_interface.png');
+	background-position : 0 -1450px;
+	height              : 388px;
+	padding             : 0 70px;
+	text-align          : center;
+	vertical-align      : middle;
+	display             : table-cell;
+	font-size           : 30px;
 }
 
 div.train > div div.content-wraper{
@@ -319,11 +319,12 @@ div.content-wraper hgroup:before{
 }
 
 div.content-wraper hgroup h3{
-	background  : transparent url('images/bkg_header-lines.png') repeat-x center center;
-	font        : 56px/normal 'bebas_neueregular';
-	color       : #333230;
-	text-shadow : 4px 4px rgba(51,50,48,0.1);
-	text-align  : center;
+	background   : transparent url('images/bkg_header-lines.png') repeat-x center center;
+	font         : 56px/normal 'bebas_neueregular';
+	color        : #333230;
+	text-shadow  : 4px 4px rgba(51,50,48,0.1);
+	text-align   : center;
+	margin-bottom: 10px;
 }
 
 div.content-wraper hgroup h5{
@@ -354,8 +355,8 @@ div.content-wraper ul li .yellow{
 	min-height          : inherit;
 	background-image    : url('images/box_hover.jpg');
 	background-position : -600px -600px;
-	background-repeat: no-repeat;
-	-webkit-transition:all 600ms;
+	background-repeat   : no-repeat;
+	-webkit-transition  : all 600ms;
 }
 
 div.content-wraper ul li .yellow:hover{
@@ -363,22 +364,23 @@ div.content-wraper ul li .yellow:hover{
 }
 
 div.content-wraper ul li .yellow p{
-	width     : inherit;
-	height    : inherit;
-	word-wrap : break-word;
-	background-color: transparent;
+	width            : inherit;
+	height           : inherit;
+	word-wrap        : break-word;
+	background-color : transparent;
+	line-height      : 20px;
 }
 
 div.content-wraper ul li span.plus{
-	background-image   : url('images/button_more.png');
-	background-repeat  : no-repeat;
-	background-position: center bottom;
-	width              : 30px;
-	height             : 37px;
-	position           : absolute;
-	bottom             : -10px;
-	left               : 100px;
-	-webkit-transition : all 500ms;
+	background-image    : url('images/button_more.png');
+	background-repeat   : no-repeat;
+	background-position : center bottom;
+	width               : 30px;
+	height              : 37px;
+	position            : absolute;
+	bottom              : -10px;
+	left                : 100px;
+	-webkit-transition  : all 500ms;
 }
 
 div.train > div.second-content {

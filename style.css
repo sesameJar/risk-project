@@ -202,7 +202,7 @@ div.train > div {
 div.train > div div.imgholder {
 	width               : 940px;
 	height              : 400px;
-	margin-bottom       : 40px;
+	margin-bottom       : 60px;
 	background-image    : url('images/sprite_bkg_slideshows.png');
 	background-size     : 100% auto;
 	background-repeat   : no-repeat;
@@ -309,10 +309,11 @@ div.content-wraper hgroup {
 div.content-wraper hgroup:before{
 	content     : '';
 	background  : transparent url('images/sprite_interface.png') no-repeat;
+	background-position: 0 -1320px;
 	position    : absolute;
 	width       : 40px;
 	left        : 50%;
-	top         : 0;
+	top         : -40px;
 	margin-left : -20px;
 	height      : 53px;
 }
@@ -328,6 +329,7 @@ div.content-wraper hgroup h3{
 div.content-wraper hgroup h5{
 	font-size : 14px;
 	color     : #7a7976;
+	text-align: center;
 }
 
 div.content-wraper ul{

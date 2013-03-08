@@ -446,10 +446,22 @@ aside.list ul li:after {
 	z-index             : 1;
 }
 
+aside.list ul li:before {
+	content     : '';
+	background  : transparent url('images/sprite_interface.png') no-repeat 0 -1270px;
+	position    : absolute;
+	width       : 52px;
+	height      : 22px;
+	top         : -11px;
+	left        : 50%;
+	z-index     : 1;
+	margin-left : -26px;
+}
+
 aside.list ul li > a {
 	text-decoration     : none;
 	font-size           : 17px;
-	color               : black;
+	color               : #222;
 	padding             : 21px 0 21px 5px;
 	width               : 235px;
 	background-image    : url('images/bkg_sidemenu-active.png') ;
@@ -471,14 +483,13 @@ div.each-content {
 	margin-left       : 240px;
 	background-image  : url('images/bkg_content.png');
 	background-repeat : repeat;
-	padding : 10px;
+	padding           : 10px;
 }
 
 div.each-content p {
-	line-height: 20px;
-	color: #504e4b;
-	font-size: 13px;
-
+	line-height : 20px;
+	color       : #504e4b;
+	font-size   : 13px;
 }
 
 div.each-content h3 {
@@ -489,7 +500,7 @@ div.each-content h3 {
 	text-align    : center;
 	margin-bottom : 20px;
 	text-transform: uppercase;
-	border-bottom: 1px dotted #bbb;
+	border-bottom : 1px dotted #bbb;
 }
 /***************************  SLIDER ***************************/
 
@@ -508,7 +519,7 @@ div.slide > div {
 	background-size : 100% auto;
 }
 
-span.pre{
+span.pre {
 	background-image    : url('images/sprite_interface.png');
 	background-position : 0 -1010px;
 	width               : 54px;
@@ -519,7 +530,7 @@ span.pre{
 	top                 : 45%;
 }
 
-span.next{
+span.next {
 	background-image    : url('images/sprite_interface.png');
 	background-position : 0 -1110px;
 	width               : 54px;
@@ -530,19 +541,19 @@ span.next{
 	top                 : 45%;
 }
 
-div.slide1{
+div.slide1 {
 	background-image : url('images/slides/slide6.png');
 }
 
-div.slide2{
+div.slide2 {
 	background-image : url('images/slides/slide31.png');
 }
 
-div.slide3{
+div.slide3 {
 	background-image : url('images/slides/slide21.png');
 }
 
-div.slide4{
+div.slide4 {
 	background-image : url('images/slides/slide12.png');
 }
 

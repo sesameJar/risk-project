@@ -478,6 +478,11 @@ aside.list ul li a:hover,aside.list ul li a.active{
 
 }
 
+div.list-content{
+	width      : 680px;
+	margin-left: 240px;
+}
+
 div.each-content {
 	width             : 680px;
 	margin-left       : 240px;

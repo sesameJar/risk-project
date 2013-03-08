@@ -7,7 +7,17 @@
          url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'SignikaLight';
+    src: url('Signika-Light-webfont.eot');
+    src: url('Signika-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Signika-Light-webfont.woff') format('woff'),
+         url('Signika-Light-webfont.ttf') format('truetype'),
+         url('Signika-Light-webfont.svg#SignikaLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .clear{
@@ -30,33 +40,34 @@ body{
 	background-image: url('images/bg.png');
 	background-repeat: repeat;
 	font-family: 'BebasNeueRegular', Arial, sans-serif;
+	line-height: 1;
 }
 
 /************************   HEADER ***************************/
 
 header {
-	width              : 940px;
-	height             : 110px;
-	position           : fixed;
-	top                : 0;
-	margin             : 0 auto;
-	background-image   : url('images/sprite_interface.png');
-	background-color   : transparent;
-	background-repeat  : no-repeat;
-	background-position: 0 -490px;
-	z-index: 100;
+	width               : 940px;
+	height              : 110px;
+	position            : fixed;
+	top                 : 0;
+	margin              : 0 auto;
+	background-image    : url('images/sprite_interface.png');
+	background-color    : transparent;
+	background-repeat   : no-repeat;
+	background-position : 0 -490px;
+	z-index             : 100;
 }
 
 header hgroup{
-	width              : 264px;
-	height             : 158px;
-	background-image   : url('images/sprite_interface.png');
-	background-color   : transparent;
-	background-repeat  : no-repeat;
-	background-position: 0 -790px;
-	position           : absolute;
-	left               : 342px;
-	z-index            : 3;
+	width               : 264px;
+	height              : 158px;
+	background-image    : url('images/sprite_interface.png');
+	background-color    : transparent;
+	background-repeat   : no-repeat;
+	background-position : 0 -790px;
+	position            : absolute;
+	left                : 342px;
+	z-index             : 3;
 }
 
 header span.wheel{
@@ -72,16 +83,16 @@ header span.wheel{
 }
 
 header span.pin {
-	width                             : 28px;
-	height                            : 24px;
-	background-image                  : url('images/sprite_interface.png');
-	background-position               : 0 -760px;
-	background-repeat                 : no-repeat;
-	z-index                           : 2;
-	top                               : 73px;
-	left                              : 80px;
-	position                          : absolute;
-	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	width                              : 28px;
+	height                             : 24px;
+	background-image                   : url('images/sprite_interface.png');
+	background-position                : 0 -760px;
+	background-repeat                  : no-repeat;
+	z-index                            : 2;
+	top                                : 73px;
+	left                               : 80px;
+	position                           : absolute;
+	-webkit-transition-timing-function : cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 
 header hgroup h1.risk{
@@ -306,40 +317,40 @@ div.content-wraper hgroup {
 	position     : relative;
 }
 
-div.content-wraper hgroup:before{
-	content     : '';
-	background  : transparent url('images/sprite_interface.png') no-repeat;
+div.content-wraper hgroup.first:before {
+	content            : '';
+	background         : transparent url('images/sprite_interface.png') no-repeat;
 	background-position: 0 -1320px;
-	position    : absolute;
-	width       : 40px;
-	left        : 50%;
-	top         : -40px;
-	margin-left : -20px;
-	height      : 53px;
+	position           : absolute;
+	width              : 40px;
+	left               : 50%;
+	top                : -40px;
+	margin-left        : -20px;
+	height             : 53px;
 }
 
 div.content-wraper hgroup h3{
-	background   : transparent url('images/bkg_header-lines.png') repeat-x center center;
-	font         : 56px/normal 'bebas_neueregular';
-	color        : #333230;
-	text-shadow  : 4px 4px rgba(51,50,48,0.1);
-	text-align   : center;
-	margin-bottom: 10px;
+	background    : transparent url('images/bkg_header-lines.png') repeat-x center center;
+	font          : 56px/normal 'bebas_neueregular';
+	color         : #333230;
+	text-shadow   : 4px 4px rgba(51,50,48,0.1);
+	text-align    : center;
+	margin-bottom : 10px;
 }
 
-div.content-wraper hgroup h5{
-	font-size : 14px;
-	color     : #7a7976;
-	text-align: center;
+div.content-wraper hgroup h5 {
+	font-size  : 14px;
+	color      : #7a7976;
+	text-align : center;
 }
 
-div.content-wraper ul{
-	list-style: none;
-	width     : 940px;
-	margin    : 0 auto;
+div.content-wraper > ul.start{
+	list-style : none;
+	width      : 940px;
+	margin     : 0 auto;
 }
 
-div.content-wraper ul li{
+div.content-wraper > ul.start li{
 	background-image : url('images/bkg_content.png');
 	background-repeat: repeat;
 	width            : 220px;
@@ -350,7 +361,7 @@ div.content-wraper ul li{
 
 }
 
-div.content-wraper ul li .yellow{
+div.content-wraper > ul.start li .yellow{
 	width               : inherit;
 	min-height          : inherit;
 	background-image    : url('images/box_hover.jpg');
@@ -359,11 +370,11 @@ div.content-wraper ul li .yellow{
 	-webkit-transition  : all 600ms;
 }
 
-div.content-wraper ul li .yellow:hover{
+div.content-wraper > ul.start li .yellow:hover{
 	background-position : 0px 0px;
 }
 
-div.content-wraper ul li .yellow p{
+div.content-wraper > ul.start li .yellow p{
 	width            : inherit;
 	height           : inherit;
 	word-wrap        : break-word;
@@ -371,7 +382,7 @@ div.content-wraper ul li .yellow p{
 	line-height      : 20px;
 }
 
-div.content-wraper ul li span.plus{
+div.content-wraper > ul.start li span.plus{
 	background-image    : url('images/button_more.png');
 	background-repeat   : no-repeat;
 	background-position : center bottom;
@@ -401,6 +412,85 @@ div.train > div.forth-content {
 	-webkit-transform: rotate3d(0,0,1,-180deg);
 }
 
+/*************************  SECOND PAGE  ****************************/
+
+aside.list {
+	width : 240px;
+	float : left;
+}
+
+aside.list ul {
+}
+
+aside.list ul li {
+	background-image : url('images/bkg_content.png');
+	background-repeat: repeat;
+	margin-bottom    : 14px;
+	position         : relative;
+	width            : 220px;
+	list-style       : none;
+	display          : block;
+	box-shadow       : 4px 4px 0 rgba(51,50,48,0.1);
+}
+
+aside.list ul li:after {
+	position            : absolute;
+	right               : -15px;
+	top                 : 37%;
+	content             : "";
+	width               : 24px;
+	height              : 17px;
+	background-image    : url('images/sprite_interface.png');
+	background-repeat   : no-repeat;
+	background-position : 0 -2520px;
+	z-index             : 1;
+}
+
+aside.list ul li > a {
+	text-decoration     : none;
+	font-size           : 17px;
+	color               : black;
+	padding             : 21px 0 21px 5px;
+	width               : 235px;
+	background-image    : url('images/bkg_sidemenu-active.png') ;
+	background-repeat   : no-repeat;
+	background-position : -245px 0;
+	display             : block;
+	position            : relative;
+	z-index             : 3;
+	-webkit-transition  : all 300ms
+}
+
+aside.list ul li a:hover,aside.list ul li a.active{
+	background-position : 0 0;
+
+}
+
+div.each-content {
+	width             : 680px;
+	margin-left       : 240px;
+	background-image  : url('images/bkg_content.png');
+	background-repeat : repeat;
+	padding : 10px;
+}
+
+div.each-content p {
+	line-height: 20px;
+	color: #504e4b;
+	font-size: 13px;
+
+}
+
+div.each-content h3 {
+	background    : transparent url('images/bkg_header-lines.png') repeat-x center center;
+	font          : 56px/normal 'bebas_neueregular';
+	color         : #333230;
+	text-shadow   : 4px 4px rgba(51,50,48,0.1);
+	text-align    : center;
+	margin-bottom : 20px;
+	text-transform: uppercase;
+	border-bottom: 1px dotted #bbb;
+}
 /***************************  SLIDER ***************************/
 
 div.slide {
@@ -411,33 +501,33 @@ div.slide {
 }
 
 div.slide > div {
-	width          : 940px;
-	height         : 434px;
-	position       : absolute;
-	z-index        : -1;
-	background-size: 100% auto;
+	width           : 940px;
+	height          : 434px;
+	position        : absolute;
+	z-index         : -1;
+	background-size : 100% auto;
 }
 
 span.pre{
-	background-image   : url('images/sprite_interface.png');
-	background-position: 0 -1010px;
-	width              : 54px;
-	height             : 44px;
-	position           : absolute;
-	z-index            : 2;
-	left               : 5%;
-	top                : 45%;
+	background-image    : url('images/sprite_interface.png');
+	background-position : 0 -1010px;
+	width               : 54px;
+	height              : 44px;
+	position            : absolute;
+	z-index             : 2;
+	left                : 5%;
+	top                 : 45%;
 }
 
 span.next{
-	background-image   : url('images/sprite_interface.png');
-	background-position: 0 -1110px;
-	width              : 54px;
-	height             : 44px;
-	position           : absolute;
-	z-index            : 2;
-	right              : 5%;
-	top                : 45%;
+	background-image    : url('images/sprite_interface.png');
+	background-position : 0 -1110px;
+	width               : 54px;
+	height              : 44px;
+	position            : absolute;
+	z-index             : 2;
+	right               : 5%;
+	top                 : 45%;
 }
 
 div.slide1{
@@ -510,12 +600,12 @@ div.source ul.sources li a:hover {
 }
 
 footer div.copyright {
-	position  : absolute;
-	bottom    : 8px;
-	left      : 437px;
-	width     : 70px;
-	color     : #888;
-	text-align: center;
+	position   : absolute;
+	bottom     : 8px;
+	left       : 437px;
+	width      : 70px;
+	color      : #888;
+	text-align : center;
 }
 
 footer div.copyright a {

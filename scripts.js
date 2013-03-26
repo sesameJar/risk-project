@@ -25,6 +25,7 @@ $(function(){
 		curentMenu = 0;
 
 	menus.click(function(){
+		
 		var thisItem = $(this).index();
 		menus.eq(curentMenu).removeClass('active');
 		menus.eq(thisItem).addClass('active');
